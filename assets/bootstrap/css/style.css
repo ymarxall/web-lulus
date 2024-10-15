@@ -1,0 +1,149 @@
+
+body{
+    text-transform: uppercase;
+}
+.navbar {
+    background-color: #02275d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+    margin-top: 0px; /* Menurunkan logo agar lebih sejajar */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 10px; /* Menurunkan navbar agar lebih sejajar */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+.table-responsive {
+    margin-top: -10px; /* Menambahkan jarak 20px antara header dan tabel */
+    padding: 5rem;
+}
+
+table {
+    width: 100%; /* Menggunakan 100% lebar untuk mengisi halaman */
+    max-width: 600px; /* Batas maksimal lebar tabel */
+    margin-left: auto; /* Mengatur margin otomatis di kiri dan kanan */
+    margin-right: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #02275d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+    bottom: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Styling untuk ikon sosial media */
+.social-icons {
+    margin-bottom: 10px; /* Menambahkan jarak antara ikon dan copyright */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Warna hover pada ikon */
+}
+
+.navbar {
+    background-color: #02275d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px; /* Menambahkan tinggi navbar */
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 60px; /* Tinggi logo disesuaikan */
+}
+
+.nav-links-left, .nav-links-right {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-links-left li, .nav-links-right li {
+    margin-left: 20px;
+}
+
+.nav-links-left li a, .nav-links-right li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links-left li a:hover, .nav-links-right li a:hover {
+    color: #ffcc00;
+}
+
+/* Untuk memusatkan logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    height: 40px;
+}
+
+
+
+/* Memastikan logo tetap di tengah pada layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+}
